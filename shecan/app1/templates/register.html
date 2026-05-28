@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card p-4">
+
+    <h2 class="text-center">
+        Register Here
+    </h2>
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+        <input
+        type="text"
+        name="name"
+        class="form-control mb-3"
+        placeholder="Enter Name"
+        required>
+
+        <input
+        type="email"
+        name="email"
+        class="form-control mb-3"
+        placeholder="Enter Email"
+        required>
+
+        <textarea
+        name="message"
+        class="form-control mb-3"
+        placeholder="Enter Message"></textarea>
+        
+
+        <button class="btn btn-primary w-100">
+            Submit
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}

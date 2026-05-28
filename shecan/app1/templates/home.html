@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="text-center mt-5">
+
+    <h1>
+        Empowering Women Through Technology
+    </h1>
+
+    <p>
+        Supporting women through learning and opportunities.
+    </p>
+
+    <a href="{% url 'register' %}" class="btn btn-success">
+        Join Us
+    </a>
+
+</div>
+
+<div class="text-center mt-5">
+
+    <h2>About Us</h2>
+
+    <p>
+        She Can Foundation supports women
+        with technology and education.
+    </p>
+
+    <img
+    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+    class="img-fluid rounded"
+    width="400">
+
+</div>
+
+{% endblock %}
